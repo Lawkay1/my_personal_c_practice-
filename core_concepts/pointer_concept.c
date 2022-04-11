@@ -23,8 +23,9 @@ printf ("%d \n", &a); // This shows the address of a remains unchanged
 int **y = &p; // p is a pointer so we use double * to create  pointer to a pointer
 int ***u = &y; // u is a pointer to a pointer to a pointer, so we use a triple *
 printf ("%d \n", y); // we print the address of p which is stored into y 
-printf ("%d \n", u);// we print the address of y which is stored in u
-printf ("%d \n", **y);// we print the value of y which is the value of p which is the value of a
-printf ("%d \n", ***u);// we print the value of u which is the value of y which is the value of p which is the value of a. 
- return 0;
+printf ("%d \n", u); // we print the address of y which is stored in u
+printf ("%d \n", **y); // we print the value of y which is the value of p which is the value of a
+printf ("%d \n", ***u); // we print the value of u which is the value of y which is the value of p which is the value of a. 
+printf ("%d \n", *y); 
+return 0;
 }
